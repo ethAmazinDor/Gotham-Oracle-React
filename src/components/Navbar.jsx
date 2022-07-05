@@ -3,13 +3,8 @@ import React from 'react'
 const Navbar = () => {
 
     const handleToggle = () => {
-        const btn = document.querySelector("button.mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden')
-        })
-
+        menu.classList.toggle('hidden')
     }
 
 
@@ -20,16 +15,17 @@ const Navbar = () => {
                     <div className="flex space-x-7">
                         <div>
                             <a href="#" className="flex items-center py-4 px-2">
-                                <img src="https://sticnuru.sirv.com/go-images/GO%20Transparent.png" alt="Logo" class="h-8 w-8 mr-2" />
+                                <img src="https://sticnuru.sirv.com/go-images/GO%20Transparent.png" alt="Logo" className="h-8 w-8 mr-2" />
                                 <span className="font-semibold text-white text-lg uppercase"
                                 >Gotham Oracle</span
                                 >
                             </a>
                         </div>
+
                         <div className="hidden md:flex items-center space-x-1">
                             <a
                                 href=""
-                                className="py-4 px-2 text-white border-b-4 border-green-500 font-semibold "
+                                className="py-4 px-2 text-white hover:text-green-500 font-semibold "
                             >Home</a
                             >
 
@@ -67,8 +63,8 @@ const Navbar = () => {
             <div class="hidden mobile-menu">
                 <ul class="">
                     <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-                    <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-                    <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+                    <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 text-white transition duration-300">About</a></li>
+                    <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 text-white transition duration-300">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
